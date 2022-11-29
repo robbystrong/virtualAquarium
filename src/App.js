@@ -12,7 +12,6 @@ function App() {
 
   return (
     <div style = {{backgroundImage: "url(/aquarium.jpg)"}} className="App">
-      <img src="./img/tropical/butterflyfish2.png" alt="Butterflyfish"></img>
       <button className="fish" onClick={toggleInfo}>Test Fish</button>
       {isOpen && <Info
         handleClose={toggleInfo}
