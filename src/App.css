@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+#fish1
+{
+  width: 10%;
+  height: 10%;
+  transition: ease-in-out .2s;
+}
+
+#fish1:hover
+{
+  cursor: pointer;
+  filter: brightness(80%);
+}
