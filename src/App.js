@@ -3,8 +3,7 @@ import React, {useState} from "react"
 import Info from "./Info.js";
 import Fish from "./Fish.js";
 import aquarium from "./aquarium.jpg"
-// import butterflyfish from "./img/tropical/butterflyfish.png";
-// <img src = {butterflyfish} id = "fish1" onClick={toggleInfo}/>
+import butterflyfish from "./img/tropical/butterflyfish.png";
 
 function App() {
 
@@ -15,8 +14,8 @@ function App() {
 
   return (
   <div style = {{backgroundImage: "url(/aquarium.jpg)"}} className="App">
+      <img src = {butterflyfish} id = "fish1" onClick={toggleInfo}/>
       <button className="fish" onClick={toggleInfo}>Test Fish</button>
-      {Fish}
       {isOpen && <Info
         handleClose={toggleInfo}
         content={<div className="info-text">
