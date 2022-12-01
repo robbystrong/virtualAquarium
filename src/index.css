@@ -50,3 +50,29 @@
   margin: 0;
   border: 0;
 }
+
+#fish1
+{
+  width: 10%;
+  height: 10%;
+  transition: ease-in-out .2s;
+}
+
+#fish1:hover
+{
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+#fish2
+{
+  width: 10%;
+  height: 10%;
+  transition: ease-in-out .2s;
+}
+
+#fish2:hover
+{
+  cursor: pointer;
+  filter: brightness(80%);
+}
