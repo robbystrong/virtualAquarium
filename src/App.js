@@ -17,10 +17,15 @@ function App() {
     setIsOpen(!isOpen);
   }
 
+  function ShowFish(props) {
+    return (<img src = {props.src} id = "butterflyfish" onClick = {toggleInfo}></img>)
+  }
+
   return (
   <div style = {{backgroundImage: "url(/aquarium.jpg)", filter: "brightness(100%)"}} className="App">
+    <ShowFish src={butterflyfish}></ShowFish>
     <Fish></Fish>
-      <img src = {butterflyfish} id = "butterflyfish" onClick = {toggleInfo}/>
+      {/* <img src = {butterflyfish} id = "butterflyfish" onClick = {toggleInfo}/> */}
       <img src = {clownfish} id = "clownfish" onClick = {toggleInfo}/>
       <img src = {lionfish} id = "lionfish" onClick = {toggleInfo}/>
       <img src = {parrotfish} id = "parrotfish" onClick = {toggleInfo}/>
