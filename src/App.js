@@ -5,6 +5,9 @@ import Fish from "./Fish.js";
 import aquarium from "./aquarium.jpg"
 import butterflyfish from "./img/tropical/butterflyfish.png";
 import clownfish from "./img/tropical/clownfish.png";
+import lionfish from "./img/tropical/lionfish.png";
+import parrotfish from "./img/tropical/parrotfish.png";
+import mandarinfish from "./img/tropical/mandarinfish.png";
 import seaturtle from "./img/tropical/seaturtle.png";
 
 function App() {
@@ -15,11 +18,14 @@ function App() {
   }
 
   return (
-  <div style = {{backgroundImage: "url(/aquarium.jpg)"}} className="App">
+  <div style = {{backgroundImage: "url(/aquarium.jpg)", filter: "brightness(100%)"}} className="App">
     <Fish></Fish>
-      <img src = {butterflyfish} id = "fish1" onClick = {toggleInfo}/>
-      <img src = {clownfish} id = "fish2" onClick = {toggleInfo}/>
-      <img src = {seaturtle} id = "turtle" onClick = {toggleInfo}/>
+      <img src = {butterflyfish} id = "butterflyfish" onClick = {toggleInfo}/>
+      <img src = {clownfish} id = "clownfish" onClick = {toggleInfo}/>
+      <img src = {lionfish} id = "lionfish" onClick = {toggleInfo}/>
+      <img src = {parrotfish} id = "parrotfish" onClick = {toggleInfo}/>
+      <img src = {mandarinfish} id = "mandarinfish" onClick = {toggleInfo}/>
+      <img src = {seaturtle} id = "seaturtle" onClick = {toggleInfo}/>
       {isOpen && <Info
         handleClose={toggleInfo}
         content={<div className="info-text">

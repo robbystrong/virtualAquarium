@@ -60,40 +60,91 @@ backgroundImage {
   border: 0;
 }
 
-#fish1
+#butterflyfish
 {
   width: 14%;
   position: absolute;
-  left: 1100px;
-  top: 140px;
+  left: 1200px;
+  top: 80px;
 
   transition: ease-in-out .2s;
 }
 
-#fish1:hover
+#butterflyfish:hover
 {
   cursor: pointer;
   filter: brightness(80%);
 }
 
-#fish2
+#clownfish
 {
   width: 11%;
   position: absolute;
   left: 240px;
-  top: 160px;
+  top: 260px;
   rotate: 0deg;
 
   transition: ease-in-out .2s;
 }
 
-#fish2:hover
+#clownfish:hover
 {
   cursor: pointer;
   filter: brightness(80%);
 }
 
-#turtle
+#lionfish
+{
+  width: 20%;
+  position: absolute;
+  left: 900px;
+  top: 280px;
+  rotate: 0deg;
+
+  transition: ease-in-out .2s;
+}
+
+#lionfish:hover
+{
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+#parrotfish
+{
+  width: 20%;
+  position: absolute;
+  left: 1140px;
+  top: 480px;
+  rotate: 0deg;
+
+  transition: ease-in-out .2s;
+}
+
+#parrotfish:hover
+{
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+#mandarinfish
+{
+  width: 20%;
+  position: absolute;
+  left: 340px;
+  top: 60px;
+  rotate: 0deg;
+
+  transition: ease-in-out .2s;
+}
+
+#mandarinfish:hover
+{
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+#seaturtle
 {
   width: 30%;
   position: absolute;
@@ -103,7 +154,7 @@ backgroundImage {
   transition: ease-in-out .2s;
 }
 
-#turtle:hover
+#seaturtle:hover
 {
   cursor: pointer;
   filter: brightness(80%);
