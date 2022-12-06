@@ -98,7 +98,7 @@ backgroundImage {
 {
   width: 20%;
   position: absolute;
-  left: 900px;
+  left: 940px;
   top: 280px;
   rotate: 0deg;
 
@@ -131,10 +131,10 @@ backgroundImage {
 #mandarinfish
 {
   width: 20%;
+  rotate: -4deg;
   position: absolute;
-  left: 340px;
-  top: 190px;
-  rotate: 14deg;
+  left: 120px;
+  top: 250px;
 
   transition: ease-in-out .2s;
 }
@@ -149,12 +149,65 @@ backgroundImage {
 {
   width: 16%;
   position: absolute;
-  left: 820px;
+  left: 860px;
   top: 80px;
   rotate: -14deg;
+
+  transition: ease-in-out .2s;
 }
 
 #triggerfish:hover
+{
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+#wrasse
+{
+  width: 16%;
+  rotate: 12deg;
+  position: absolute;
+  top: 260px;
+  left: 520px;
+
+  transition: ease-in-out .2s;
+}
+
+#wrasse:hover
+{
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+#angelfish
+{
+  width: 12%;
+  rotate: -24deg;
+  position: absolute;
+  top: 312px;
+  left: 1260px;
+
+  transition: ease-in-out .2s;
+}
+
+#angelfish:hover
+{
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+#catshark
+{
+  width: 30%;
+  rotate: 26deg;
+  position: absolute;
+  left: 396px;
+  top: -10px;
+
+  transition: ease-in-out .2s;
+}
+
+#catshark:hover
 {
   cursor: pointer;
   filter: brightness(80%);
@@ -167,7 +220,7 @@ backgroundImage {
   rotate: 4deg;
   position: absolute;
   top: 400px;
-  left: 700px;
+  left: 750px;
 
   transition: ease-in-out .2s;
 }
@@ -181,9 +234,10 @@ backgroundImage {
 #seaturtle
 {
   width: 30%;
+  rotate: -8deg;
   position: absolute;
-  left: 100px;
-  top: 426px;
+  left: 140px;
+  top: 470px;
 
   transition: ease-in-out .2s;
 }
