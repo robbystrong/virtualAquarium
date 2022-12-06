@@ -66,6 +66,7 @@ backgroundImage {
   position: absolute;
   left: 1200px;
   top: 80px;
+  rotate: 2deg;
 
   transition: ease-in-out .2s;
 }
@@ -80,9 +81,9 @@ backgroundImage {
 {
   width: 11%;
   position: absolute;
-  left: 240px;
-  top: 260px;
-  rotate: 0deg;
+  left: 140px;
+  top: 80px;
+  rotate: 8deg;
 
   transition: ease-in-out .2s;
 }
@@ -132,8 +133,8 @@ backgroundImage {
   width: 20%;
   position: absolute;
   left: 340px;
-  top: 60px;
-  rotate: 0deg;
+  top: 190px;
+  rotate: 14deg;
 
   transition: ease-in-out .2s;
 }
@@ -144,12 +145,45 @@ backgroundImage {
   filter: brightness(80%);
 }
 
+#triggerfish
+{
+  width: 16%;
+  position: absolute;
+  left: 820px;
+  top: 80px;
+  rotate: -14deg;
+}
+
+#triggerfish:hover
+{
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+#kudaseahorse
+{
+  width: 14%;
+  transform: scaleX(-1);
+  rotate: 4deg;
+  position: absolute;
+  top: 400px;
+  left: 700px;
+
+  transition: ease-in-out .2s;
+}
+
+#kudaseahorse:hover
+{
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
 #seaturtle
 {
   width: 30%;
   position: absolute;
   left: 100px;
-  top: 400px;
+  top: 426px;
 
   transition: ease-in-out .2s;
 }

@@ -8,6 +8,9 @@ import clownfish from "./img/tropical/clownfish.png";
 import lionfish from "./img/tropical/lionfish.png";
 import parrotfish from "./img/tropical/parrotfish.png";
 import mandarinfish from "./img/tropical/mandarinfish.png";
+import triggerfish from "./img/tropical/triggerfish.png";
+import greenmandaringoby from "./img/tropical/greenmandaringoby.png";
+import kudaseahorse from "./img/tropical/kudaseahorse.png";
 import seaturtle from "./img/tropical/seaturtle.png";
 
 function App() {
@@ -25,6 +28,9 @@ function App() {
       <img src = {lionfish} id = "lionfish" onClick = {toggleInfo}/>
       <img src = {parrotfish} id = "parrotfish" onClick = {toggleInfo}/>
       <img src = {mandarinfish} id = "mandarinfish" onClick = {toggleInfo}/>
+      <img src = {triggerfish} id = "triggerfish" onClick = {toggleInfo}/>
+      <img src = {greenmandaringoby} id = "greenmandaringoby" onClick = {toggleInfo}/>
+      <img src = {kudaseahorse} id = "kudaseahorse" onClick = {toggleInfo}/>
       <img src = {seaturtle} id = "seaturtle" onClick = {toggleInfo}/>
       {isOpen && <Info
         handleClose={toggleInfo}
