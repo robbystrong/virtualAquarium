@@ -5,6 +5,7 @@ import Fish from "./Fish.js";
 import aquarium from "./aquarium.jpg"
 import butterflyfish from "./img/tropical/butterflyfish.png";
 import clownfish from "./img/tropical/clownfish.png";
+import seaturtle from "./img/tropical/seaturtle.png";
 
 function App() {
 
@@ -16,9 +17,9 @@ function App() {
   return (
   <div style = {{backgroundImage: "url(/aquarium.jpg)"}} className="App">
     <Fish></Fish>
-      <img src = {butterflyfish} id = "fish1" onClick={toggleInfo}/>
-      <img src = {clownfish} id = "fish2" onClick={toggleInfo}/>
-      <button className="fish" onClick={toggleInfo}>Test Fish</button>
+      <img src = {butterflyfish} id = "fish1" onClick = {toggleInfo}/>
+      <img src = {clownfish} id = "fish2" onClick = {toggleInfo}/>
+      <img src = {seaturtle} id = "turtle" onClick = {toggleInfo}/>
       {isOpen && <Info
         handleClose={toggleInfo}
         content={<div className="info-text">
@@ -33,3 +34,5 @@ function App() {
 }
 
 export default App;
+
+// <button className="fish" onClick={toggleInfo}>Test Fish</button>

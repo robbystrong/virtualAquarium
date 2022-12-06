@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 .App-logo {
@@ -37,10 +39,14 @@
   }
 }
 
-#fish1
+/* #fish1
 {
   width: 10%;
   height: 10%;
+  position: absolute;
+  left: 600px;
+  top: 100px;
+
   transition: ease-in-out .2s;
 }
 
@@ -48,4 +54,4 @@
 {
   cursor: pointer;
   filter: brightness(80%);
-}
+} */

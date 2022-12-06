@@ -1,3 +1,12 @@
+*,html {
+  padding: 0;
+  margin: 0;
+}
+
+backgroundImage {
+  filter: brightness(10%);
+}
+
 .info-box {
   position: fixed;
   display: flex;
@@ -24,11 +33,11 @@
 
 .close-button {
   cursor: pointer;
-  border: 1px solid #999; 
+  border: 1px solid #999;
   padding: 10px;
   position: fixed;
   right: 5%;
-  top: 30px; 
+  top: 30px;
 }
 
 .fish {
@@ -53,8 +62,11 @@
 
 #fish1
 {
-  width: 10%;
-  height: 10%;
+  width: 14%;
+  position: absolute;
+  left: 1100px;
+  top: 140px;
+
   transition: ease-in-out .2s;
 }
 
@@ -66,12 +78,32 @@
 
 #fish2
 {
-  width: 10%;
-  height: 10%;
+  width: 11%;
+  position: absolute;
+  left: 240px;
+  top: 160px;
+  rotate: 0deg;
+
   transition: ease-in-out .2s;
 }
 
 #fish2:hover
+{
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+#turtle
+{
+  width: 30%;
+  position: absolute;
+  left: 100px;
+  top: 400px;
+
+  transition: ease-in-out .2s;
+}
+
+#turtle:hover
 {
   cursor: pointer;
   filter: brightness(80%);

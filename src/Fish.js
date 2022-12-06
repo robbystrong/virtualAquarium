@@ -6,14 +6,16 @@ import butterflyfish from './img/tropical/butterflyfish.png';
 let anim = anime({
   targets: 'img',
   keyframes: [
-    {translateX: -500},
-    {translateX: 500},
+    {translateY: -5, rotate: 4},
+    {translateY: 5, rotate: -4},
+    // {translateZ: 4},
+    // {translateZ: -4}
   ],
-  duration: 3000,
+  duration: 1000,
   autoplay: true,
-  direction: 'alternate',
+  //direction: 'alternate',
   loop: true,
-  easing: 'easeInOutQuad',
+  //easing: 'easeInCirc',
 });
 
 const Fish = props => {
