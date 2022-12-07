@@ -201,8 +201,8 @@ backgroundImage {
   width: 30%;
   rotate: 26deg;
   position: absolute;
-  left: 396px;
-  top: -10px;
+  left: 386px;
+  top: 24px;
 
   transition: ease-in-out .2s;
 }
@@ -216,7 +216,6 @@ backgroundImage {
 #kudaseahorse
 {
   width: 14%;
-  transform: scaleX(-1);
   rotate: 4deg;
   position: absolute;
   top: 400px;
