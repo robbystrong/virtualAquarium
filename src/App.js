@@ -35,32 +35,17 @@ function App() {
   return (
   <div style = {{backgroundImage: "url(/aquarium.jpg)", filter: "brightness(100%)"}} className="App">
     <Fish></Fish>
-      {/* <img src = {butterflyfish} id = "butterflyfish" onClick = {toggleInfo}/> */}
-      <img src = {DisplayFish[0]} id = {DisplayFish[0].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
-      <img src = {DisplayFish[1]} id = {DisplayFish[1].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
-      <img src = {DisplayFish[2]} id = {DisplayFish[2].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
-      <img src = {DisplayFish[3]} id = {DisplayFish[3].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
-      <img src = {DisplayFish[4]} id = {DisplayFish[4].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
-      <img src = {DisplayFish[5]} id = {DisplayFish[5].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
-      <img src = {DisplayFish[6]} id = {DisplayFish[6].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
-      <img src = {DisplayFish[7]} id = {DisplayFish[7].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
-      <img src = {DisplayFish[8]} id = {DisplayFish[8].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
-      <img src = {DisplayFish[9]} id = {DisplayFish[9].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
-
-      {/* Adding button to randomise fish */}
-      <button onClick={
-        // Randomise function that takes in an array of fish, and outputs the fish in random order, pulling from ListOfFish
-        function RandomFish() {
-          for (let i = 0; i < DisplayFish.length; i++) {
-            let NewFish = ListOfFish[Math.floor(Math.random() * ListOfFish.length)];
-            // Changing the src
-            document.getElementById(DisplayFish[i]).src = NewFish;
-            // Changing the id
-            document.getElementById(DisplayFish[i]).id = NewFish.toString();
-            DisplayFish[i] = NewFish;
-          }
-        }
-      }>Randomize</button>
+      <img src = {butterflyfish} id = "butterflyfish" onClick = {toggleInfo}/>
+      <img src = {clownfish} id = "clownfish" onClick = {toggleInfo}/>
+      <img src = {lionfish} id = "lionfish" onClick = {toggleInfo}/>
+      <img src = {parrotfish} id = "parrotfish" onClick = {toggleInfo}/>
+      <img src = {mandarinfish} id = "mandarinfish" onClick = {toggleInfo}/>
+      <img src = {triggerfish} id = "triggerfish" onClick = {toggleInfo}/>
+      <img src = {wrasse} id = "wrasse" onClick = {toggleInfo}/>
+      <img src = {angelfish} id = "angelfish" onClick = {toggleInfo}/>
+      <img src = {catshark} id = "catshark" onClick = {toggleInfo}/>
+      <img src = {kudaseahorse} id = "kudaseahorse" onClick = {toggleInfo}/>
+      <img src = {seaturtle} id = "seaturtle" onClick = {toggleInfo}/>
 
       {isOpen && <Info
         handleClose={toggleInfo}
@@ -78,3 +63,30 @@ function App() {
 export default App;
 
 // <button className="fish" onClick={toggleInfo}>Test Fish</button>
+
+// {/* <img src = {butterflyfish} id = "butterflyfish" onClick = {toggleInfo}/> */}
+// <img src = {DisplayFish[0]} id = {DisplayFish[0].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
+// <img src = {DisplayFish[1]} id = {DisplayFish[1].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
+// <img src = {DisplayFish[2]} id = {DisplayFish[2].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
+// <img src = {DisplayFish[3]} id = {DisplayFish[3].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
+// <img src = {DisplayFish[4]} id = {DisplayFish[4].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
+// <img src = {DisplayFish[5]} id = {DisplayFish[5].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
+// <img src = {DisplayFish[6]} id = {DisplayFish[6].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
+// <img src = {DisplayFish[7]} id = {DisplayFish[7].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
+// <img src = {DisplayFish[8]} id = {DisplayFish[8].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
+// <img src = {DisplayFish[9]} id = {DisplayFish[9].toString()} onClick = {toggleInfo} height = "200" width = "200"/>
+//
+// {/* Adding button to randomise fish */}
+// <button onClick={
+//   // Randomise function that takes in an array of fish, and outputs the fish in random order, pulling from ListOfFish
+//   function RandomFish() {
+//     for (let i = 0; i < DisplayFish.length; i++) {
+//       let NewFish = ListOfFish[Math.floor(Math.random() * ListOfFish.length)];
+//       // Changing the src
+//       document.getElementById(DisplayFish[i]).src = NewFish;
+//       // Changing the id
+//       document.getElementById(DisplayFish[i]).id = NewFish.toString();
+//       DisplayFish[i] = NewFish;
+//     }
+//   }
+// }>Randomize</button>
