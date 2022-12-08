@@ -60,6 +60,22 @@ backgroundImage {
   border: 0;
 }
 
+@keyframes rotation
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    transform: rotate(1.8deg);
+  }
+  100%
+  {
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes butterflyfish
 {
   from
@@ -82,7 +98,8 @@ backgroundImage {
   top: 80px;
   rotate: 2deg;
 
-  animation: butterflyfish 1s alternate;
+  animation: butterflyfish 1s alternate, rotation .8s infinite;
+  animation-delay: 0s, 1s;
 
   transition: ease-in-out .2s;
 }
@@ -115,7 +132,8 @@ backgroundImage {
   top: 80px;
   rotate: 8deg;
 
-  animation: clownfish 1s alternate;
+  animation: clownfish 1s alternate, rotation .8s infinite;
+  animation-delay: 0s, 1s;
 
   transition: ease-in-out .2s;
 }
@@ -148,7 +166,8 @@ backgroundImage {
   top: 280px;
   rotate: 0deg;
 
-  animation: lionfish 1s alternate;
+  animation: lionfish 1s alternate, rotation .8s infinite;
+  animation-delay: 0s, 1s;
 
   transition: ease-in-out .2s;
 }
@@ -181,7 +200,8 @@ backgroundImage {
   top: 480px;
   rotate: 0deg;
 
-  animation: parrotfish 1s alternate;
+  animation: parrotfish 1s alternate, rotation .8s infinite;
+  animation-delay: 0s, 1s;
 
   transition: ease-in-out .2s;
 }
@@ -214,7 +234,8 @@ backgroundImage {
   left: 120px;
   top: 250px;
 
-  animation: mandarinfish 1s alternate;
+  animation: mandarinfish 1s alternate, rotation .8s infinite;
+  animation-delay: 0s, 1s;
 
   transition: ease-in-out .2s;
 }
@@ -247,7 +268,8 @@ backgroundImage {
   top: 80px;
   rotate: -14deg;
 
-  animation: triggerfish 1s alternate;
+  animation: triggerfish 1s alternate, rotation .8s infinite;
+  animation-delay: 0s, 1s;
 
   transition: ease-in-out .2s;
 }
@@ -280,7 +302,8 @@ backgroundImage {
   top: 260px;
   left: 520px;
 
-  animation: wrasse 1s alternate;
+  animation: wrasse 1s alternate, rotation .8s infinite;
+  animation-delay: 0s, 1s;
 
   transition: ease-in-out .2s;
 }
@@ -313,7 +336,8 @@ backgroundImage {
   top: 312px;
   left: 1260px;
 
-  animation: angelfish 1s alternate;
+  animation: angelfish 1s alternate, rotation .8s infinite;
+  animation-delay: 0s, 1s;
 
   transition: ease-in-out .2s;
 }
@@ -346,7 +370,8 @@ backgroundImage {
   left: 386px;
   top: 24px;
 
-  animation: catshark 1s alternate;
+  animation: catshark 1s alternate, rotation .8s infinite;
+  animation-delay: 0s, 1s;
 
   transition: ease-in-out .2s;
 }
@@ -379,7 +404,8 @@ backgroundImage {
   top: 400px;
   left: 750px;
 
-  animation: kudaseahorse 1s alternate;
+  animation: kudaseahorse 1s alternate, rotation .8s infinite;
+  animation-delay: 0s, 1s;
 
   transition: ease-in-out .2s;
 }
@@ -412,7 +438,8 @@ backgroundImage {
   left: 140px;
   top: 470px;
 
-  animation: seaturtle 1s alternate;
+  animation: seaturtle 1s alternate, rotation .8s infinite;
+  animation-delay: 0s, 1s;
 
   transition: ease-in-out .2s;
 }

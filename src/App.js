@@ -1,7 +1,6 @@
 import './App.css';
 import React, {startTransition, useState} from "react"
 import Info from "./Info.js";
-import Fish from "./Fish.js";
 import aquarium from "./aquarium.jpg"
 import butterflyfish from "./img/tropical/butterflyfish.png";
 import clownfish from "./img/tropical/clownfish.png";
@@ -167,7 +166,7 @@ const FishInformation = [
     //     </div>}
     // />}
 
-    
+
 
   return (
   <div className="App" id="App">
@@ -196,8 +195,6 @@ const FishInformation = [
     <img src = {seaturtle} id = "seaturtle" onClick = {clickSeaturtle}/>
     <img src = {butterflyfish} id = "butterflyfish" onClick = {clickButterflyfish}/>
 
-    <Fish></Fish>
-
     {isOpen && <Info
         handleClose={toggleInfo}
         content={<div className="info-text">
@@ -206,7 +203,7 @@ const FishInformation = [
           </FishInfo>
           </div>}
       />}
-      
+
 
       {/* <ShowFish src={DisplayFish[0]} id = "clownfish"/> */}
       {/* <ShowFish src={DisplayFish[1]} id = "lionfish"/> */}
