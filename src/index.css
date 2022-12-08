@@ -1,6 +1,7 @@
 *,html {
   padding: 0;
   margin: 0;
+  font-family: 'Alata', sans-serif;
 }
 
 backgroundImage {
@@ -448,4 +449,50 @@ backgroundImage {
 {
   cursor: pointer;
   filter: brightness(80%);
+}
+
+#webAq
+{
+  color: white;
+  font-size: 140px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  /* text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000; */
+
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  transition: .4s;
+}
+
+#webAq:hover
+{
+  color: #5fe994;
+  cursor: default;
+}
+
+#click2enter
+{
+  color: white;
+  font-size: 100px;
+  -webkit-text-stroke-width: 4.8px;
+  -webkit-text-stroke-color: black;
+  /* text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000; */
+
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  transition: ease-in-out .4s;
+}
+
+#click2enter:hover
+{
+  color: #fbfa8c;
+  cursor: default;
 }

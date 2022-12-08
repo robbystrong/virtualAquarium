@@ -169,19 +169,19 @@ const FishInformation = [
 
 
   return (
-  <div className="App" id="App">
+  <div className="App" id="App" onClick = {function StartAquarium() {
+      // getting rid of text on screen and displaying the fish
+      document.querySelector(".App > h2").style.display = "none";
+      document.querySelector(".App > p").style.display = "none";
+      // document.querySelector(".App > img").style.display = "block";
+      // displaying all fish
+      for (let i = 0; i < ListOfFish.length; i++) {
+        document.querySelectorAll(".App > img")[i].style.display = "block";
+      }
+    }}>
 
-      <h2>Web Aquarium</h2>
-      <p onClick = {function StartAquarium() {
-        // getting rid of text on screen and displaying the fish
-        document.querySelector(".App > h2").style.display = "none";
-        document.querySelector(".App > p").style.display = "none";
-        // document.querySelector(".App > img").style.display = "block";
-        // displaying all fish
-        for (let i = 0; i < ListOfFish.length; i++) {
-          document.querySelectorAll(".App > img")[i].style.display = "block";
-        }
-      }}>Click to Enter</p>
+      <h2 id = "webAq">Web Aquarium</h2>
+      <p id = "click2enter" >Click to Enter</p>
 
     <img src = {clownfish} id = "clownfish" onClick = {clickClownfish}/>
     <img src = {lionfish} id = "lionfish" onClick = {clickLionfish}/>
