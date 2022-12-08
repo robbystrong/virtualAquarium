@@ -23,11 +23,30 @@ function App() {
   }
 
   function ShowFish(props) {
-    return (<img src = {props.src} id = "butterflyfish" onClick = {toggleInfo}></img>)
+    return (<img src = {props.src} id = {props.id} className="fish" onClick = {toggleInfo} ></img>)
+  }
+
+  function FishInfo(props) {
+    return (
+    <div>
+      <img src = {props.src} className = "fish"></img>
+      <h1>{props.name}</h1>
+      <p>{props.info}</p>
+      </div>
+    )
   }
 
   // List of all fish
   const ListOfFish = [clownfish, lionfish, parrotfish, mandarinfish, triggerfish, wrasse, angelfish, catshark, kudaseahorse, seaturtle];
+
+  // names of all fish in string
+  const NamesOfFish = ["Clownfish", "Lionfish", "Parrotfish", "Mandarinfish", "Triggerfish", "Wrasse", "Angelfish", "Catshark", "Kudaseahorse", "Seaturtle"];
+
+  // information of all fish
+  const FishInformation = [
+    "Sample Clownfish Info",
+    "Sample Lionfish Info",
+    ]
 
   // The fish that display on the screen, can be randomised
   let DisplayFish = [clownfish, lionfish, parrotfish, mandarinfish, triggerfish, wrasse, angelfish, catshark, kudaseahorse, seaturtle];
@@ -35,8 +54,10 @@ function App() {
   return (
   <div style = {{backgroundImage: "url(/aquarium.jpg)", filter: "brightness(100%)"}} className="App">
       <img src = {butterflyfish} id = "butterflyfish" onClick = {toggleInfo}/>
-      <img src = {clownfish} id = "clownfish" onClick = {toggleInfo}/>
-      <img src = {lionfish} id = "lionfish" onClick = {toggleInfo}/>
+      <ShowFish src={DisplayFish[0]} id = {DisplayFish[0].toString()}/>
+      <ShowFish src={DisplayFish[1]} id = {DisplayFish[1].toString()}/>
+      {/* <img src = {clownfish} id = "clownfish" onClick = {toggleInfo}/>
+      <img src = {lionfish} id = "lionfish" onClick = {toggleInfo}/> */}
       <img src = {parrotfish} id = "parrotfish" onClick = {toggleInfo}/>
       <img src = {mandarinfish} id = "mandarinfish" onClick = {toggleInfo}/>
       <img src = {triggerfish} id = "triggerfish" onClick = {toggleInfo}/>
@@ -49,10 +70,9 @@ function App() {
       {isOpen && <Info
         handleClose={toggleInfo}
         content={<div className="info-text">
-          <img className="info-image" src={aquarium} alt ="fish" width="200" height="200"></img>
-          <h2>Fish 1</h2>
-          <h2>Fish 1</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus nibh ante, vel elementum nibh gravida sed. Praesent dictum sed eros vestibulum tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque consectetur vulputate urna, at dignissim nisi consectetur in. Phasellus sed ipsum ante. Sed in facilisis tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque sodales metus massa, nec pellentesque metus rutrum quis. In vestibulum suscipit ante eu ornare. Vivamus eu tortor ultrices, gravida lacus a, scelerisque leo. Praesent auctor lacinia dui, in bibendum dui egestas nec. Nulla a egestas magna.</p>
+          <FishInfo 
+          src = {DisplayFish[0]} name = {NamesOfFish[0]} info = {FishInformation[0]}>
+          </FishInfo>
           </div>}
       />}
     </div>
