@@ -1,7 +1,8 @@
 import './App.css';
-import React, {startTransition, useState} from "react"
+// import React, {startTransition, useState} from "react"
+import React from "react";
 import Info from "./Info.js";
-import aquarium from "./aquarium.jpg"
+// import aquarium from "./aquarium.jpg"
 import butterflyfish from "./img/tropical/butterflyfish.png";
 import clownfish from "./img/tropical/clownfish.png";
 import lionfish from "./img/tropical/lionfish.png";
@@ -23,9 +24,9 @@ function App() {
     setIsOpen(!isOpen);
   }
 
-  function ShowFish(props) {
-    return (<img src = {props.src} id = {props.id} className="fish" onClick = {toggleInfo} ></img>)
-  }
+  // function ShowFish(props) {
+  //   return (<img src = {props.src} id = {props.id} className="fish" onClick = {toggleInfo} ></img>)
+  // }
 
   function FishInfo(props) {
     return (
@@ -183,17 +184,17 @@ const FishInformation = [
       <h2 id = "webAq">Web Aquarium</h2>
       <p id = "click2enter" >Click to Enter</p>
 
-    <img src = {clownfish} id = "clownfish" onClick = {clickClownfish}/>
-    <img src = {lionfish} id = "lionfish" onClick = {clickLionfish}/>
-    <img src = {parrotfish} id = "parrotfish" onClick = {clickParrotfish}/>
-    <img src = {mandarinfish} id = "mandarinfish" onClick = {clickMandarinfish}/>
-    <img src = {triggerfish} id = "triggerfish" onClick = {clickTriggerfish}/>
-    <img src = {wrasse} id = "wrasse" onClick = {clickWrasse}/>
-    <img src = {angelfish} id = "angelfish" onClick = {clickAngelfish}/>
-    <img src = {catshark} id = "catshark" onClick = {clickCatshark}/>
-    <img src = {kudaseahorse} id = "kudaseahorse" onClick = {clickKudaseahorse}/>
-    <img src = {seaturtle} id = "seaturtle" onClick = {clickSeaturtle}/>
-    <img src = {butterflyfish} id = "butterflyfish" onClick = {clickButterflyfish}/>
+    <img src = {clownfish} id = "clownfish" onClick = {clickClownfish} alt="A picture of a clownfish"/>
+    <img src = {lionfish} id = "lionfish" onClick = {clickLionfish} alt="A picture of a lionfish"/>
+    <img src = {parrotfish} id = "parrotfish" onClick = {clickParrotfish} alt="A picture of a parrotfish"/>
+    <img src = {mandarinfish} id = "mandarinfish" onClick = {clickMandarinfish} alt="A picture of a mandarinfish"/>
+    <img src = {triggerfish} id = "triggerfish" onClick = {clickTriggerfish} alt="A picture of a triggerfish"/>
+    <img src = {wrasse} id = "wrasse" onClick = {clickWrasse} alt="A picture of a wrasse"/>
+    <img src = {angelfish} id = "angelfish" onClick = {clickAngelfish} alt="A picture of an angelfish"/>
+    <img src = {catshark} id = "catshark" onClick = {clickCatshark} alt="A picture of a catshark"/>
+    <img src = {kudaseahorse} id = "kudaseahorse" onClick = {clickKudaseahorse} alt="A picture of a kuda seahorse"/>
+    <img src = {seaturtle} id = "seaturtle" onClick = {clickSeaturtle} alt="A picture of a sea turtle"/>
+    <img src = {butterflyfish} id = "butterflyfish" onClick = {clickButterflyfish} alt="A picture of a butterflyfish"/>
 
     {isOpen && <Info
         handleClose={toggleInfo}
