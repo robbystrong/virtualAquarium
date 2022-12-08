@@ -33,6 +33,7 @@ function App() {
       <img src = {props.src} className = "fish" alt=""></img>
       <h1>{props.name}</h1>
       <p>{props.info}</p>
+      <a href={props.link}>Wikipedia</a>
       </div>
     )
   }
@@ -125,19 +126,19 @@ const FishInformation = [
   ]
 
   // link to info for all fish
-  // const FishLink = [
-  //   "https://en.wikipedia.org/wiki/Clownfish",
-  //   "https://en.wikipedia.org/wiki/Pterois",
-  //   "https://en.wikipedia.org/wiki/Parrotfish",
-  //   "https://en.wikipedia.org/wiki/Synchiropus_splendidus",
-  //   "https://en.wikipedia.org/wiki/Triggerfish",
-  //   "https://en.wikipedia.org/wiki/Wrasse",
-  //   "https://en.wikipedia.org/wiki/Pterophyllum",
-  //   "https://en.wikipedia.org/wiki/Small-spotted_catshark",
-  //   "https://en.wikipedia.org/wiki/Hippocampus_kuda",
-  //   "https://en.wikipedia.org/wiki/Sea_turtle",
-  //   "https://en.wikipedia.org/wiki/Butterflyfish"
-  // ]
+  const FishLink = [
+    "https://en.wikipedia.org/wiki/Clownfish",
+    "https://en.wikipedia.org/wiki/Pterois",
+    "https://en.wikipedia.org/wiki/Parrotfish",
+    "https://en.wikipedia.org/wiki/Synchiropus_splendidus",
+    "https://en.wikipedia.org/wiki/Triggerfish",
+    "https://en.wikipedia.org/wiki/Wrasse",
+    "https://en.wikipedia.org/wiki/Pterophyllum",
+    "https://en.wikipedia.org/wiki/Small-spotted_catshark",
+    "https://en.wikipedia.org/wiki/Hippocampus_kuda",
+    "https://en.wikipedia.org/wiki/Sea_turtle",
+    "https://en.wikipedia.org/wiki/Butterflyfish"
+  ]
 
   // The fish that display on the screen, can be randomised
   let DisplayFish = [clownfish, lionfish, parrotfish, mandarinfish, triggerfish, wrasse, angelfish, catshark, kudaseahorse, seaturtle, butterflyfish];
@@ -200,7 +201,7 @@ const FishInformation = [
         handleClose={toggleInfo}
         content={<div className="info-text">
           <FishInfo
-          src = {DisplayFish[fishnum]} name = {NamesOfFish[fishnum]} info = {FishInformation[fishnum]}>
+          src = {DisplayFish[fishnum]} name = {NamesOfFish[fishnum]} info = {FishInformation[fishnum]} link = {FishLink[fishnum]}>
           </FishInfo>
           </div>}
       />}
