@@ -41,9 +41,9 @@ backgroundImage {
 }
 
 .fish {
+  max-height: 20%;
+  max-width: 20%;
   cursor: pointer;
-  margin: 15% auto;
-  padding: 5%;
 }
 
 .info-text {
