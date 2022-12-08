@@ -34,7 +34,6 @@ function App() {
 
   return (
   <div style = {{backgroundImage: "url(/aquarium.jpg)", filter: "brightness(100%)"}} className="App">
-    <Fish></Fish>
       <img src = {butterflyfish} id = "butterflyfish" onClick = {toggleInfo}/>
       <img src = {clownfish} id = "clownfish" onClick = {toggleInfo}/>
       <img src = {lionfish} id = "lionfish" onClick = {toggleInfo}/>
@@ -46,7 +45,7 @@ function App() {
       <img src = {catshark} id = "catshark" onClick = {toggleInfo}/>
       <img src = {kudaseahorse} id = "kudaseahorse" onClick = {toggleInfo}/>
       <img src = {seaturtle} id = "seaturtle" onClick = {toggleInfo}/>
-
+      <Fish></Fish>
       {isOpen && <Info
         handleClose={toggleInfo}
         content={<div className="info-text">

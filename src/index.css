@@ -213,6 +213,20 @@ backgroundImage {
   filter: brightness(80%);
 }
 
+@keyframes kudaseahorse
+{
+  from
+  {
+    top: 800px;
+    left: 750px;
+  }
+  to
+  {
+    top: 400px;
+    left: 750px;
+  }
+}
+
 #kudaseahorse
 {
   width: 14%;
@@ -220,6 +234,8 @@ backgroundImage {
   position: absolute;
   top: 400px;
   left: 750px;
+
+  animation: kudaseahorse 1s alternate;
 
   transition: ease-in-out .2s;
 }
