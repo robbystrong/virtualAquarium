@@ -15,6 +15,8 @@ import catshark from "./img/tropical/catshark.png";
 import kudaseahorse from "./img/tropical/kudaseahorse.png";
 import seaturtle from "./img/tropical/seaturtle.png";
 
+let fishnum;
+
 function App() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -36,30 +38,47 @@ function App() {
     )
   }
 
+  function clickClownfish(){
+    fishnum = 0;
+    toggleInfo()
+    console.log(fishnum);
+  }
+
+  function clickLionfish(){
+    fishnum = 1;
+    toggleInfo()
+    console.log(fishnum);
+  }
+
+  function clickParrotfish(){
+    fishnum = 2;
+    toggleInfo()
+    console.log(fishnum);
+  }
   // List of all fish
   const ListOfFish = [clownfish, lionfish, parrotfish, mandarinfish, triggerfish, wrasse, angelfish, catshark, kudaseahorse, seaturtle];
 
   // names of all fish in string
-  const NamesOfFish = ["Clownfish", "Lionfish", "Parrotfish", "Mandarinfish", "Triggerfish", "Wrasse", "Angelfish", "Catshark", "Kudaseahorse", "Seaturtle"];
+  const NamesOfFish = ["Clownfish", "Lionfish", "Parrotfish", "Mandarinfish", "Triggerfish", "Wrasse", "Angelfish", "Catshark", "Kudaseahorse", "Seaturtle", "butterflyfish"];
 
   // information of all fish
   const FishInformation = [
     "Sample Clownfish Info",
     "Sample Lionfish Info",
+    "Sample Parrotfish Info"
     ]
 
   // The fish that display on the screen, can be randomised
-  let DisplayFish = [clownfish, lionfish, parrotfish, mandarinfish, triggerfish, wrasse, angelfish, catshark, kudaseahorse, seaturtle];
+  let DisplayFish = [clownfish, lionfish, parrotfish, mandarinfish, triggerfish, wrasse, angelfish, catshark, kudaseahorse, seaturtle, butterflyfish];
 
   return (
   <div style = {{backgroundImage: "url(/aquarium.jpg)", filter: "brightness(100%)"}} className="App">
     <Fish></Fish>
-      <img src = {butterflyfish} id = "butterflyfish" onClick = {toggleInfo}/>
-      <ShowFish src={DisplayFish[0]} id = {DisplayFish[0].toString()}/>
-      <ShowFish src={DisplayFish[1]} id = {DisplayFish[1].toString()}/>
-      {/* <img src = {clownfish} id = "clownfish" onClick = {toggleInfo}/>
-      <img src = {lionfish} id = "lionfish" onClick = {toggleInfo}/> */}
-      <img src = {parrotfish} id = "parrotfish" onClick = {toggleInfo}/>
+      {/* <ShowFish src={DisplayFish[0]} id = "clownfish"/> */}
+      {/* <ShowFish src={DisplayFish[1]} id = "lionfish"/> */}
+      <img src = {clownfish} id = "clownfish" onClick = {clickClownfish}/>
+      <img src = {lionfish} id = "lionfish" onClick = {clickLionfish}/>
+      <img src = {parrotfish} id = "parrotfish" onClick = {clickParrotfish}/>
       <img src = {mandarinfish} id = "mandarinfish" onClick = {toggleInfo}/>
       <img src = {triggerfish} id = "triggerfish" onClick = {toggleInfo}/>
       <img src = {wrasse} id = "wrasse" onClick = {toggleInfo}/>
@@ -67,12 +86,13 @@ function App() {
       <img src = {catshark} id = "catshark" onClick = {toggleInfo}/>
       <img src = {kudaseahorse} id = "kudaseahorse" onClick = {toggleInfo}/>
       <img src = {seaturtle} id = "seaturtle" onClick = {toggleInfo}/>
+      <img src = {butterflyfish} id = "butterflyfish" onClick = {toggleInfo}/>
 
       {isOpen && <Info
         handleClose={toggleInfo}
         content={<div className="info-text">
           <FishInfo 
-          src = {DisplayFish[0]} name = {NamesOfFish[0]} info = {FishInformation[0]}>
+          src = {DisplayFish[fishnum]} name = {NamesOfFish[fishnum]} info = {FishInformation[fishnum]}>
           </FishInfo>
           </div>}
       />}
