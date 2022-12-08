@@ -1,7 +1,21 @@
+#WelcomeScreen {
+  background-size: cover;
+  text-align: center;
+}
+
 .App {
   text-align: center;
   background-size: cover;
   height: 100vh;
+
+  background-image: url(./aquarium.jpg);
+}
+.App img {
+  display: none;
+}
+.App h2,
+p {
+  display: block;
 }
 
 .App-logo {
