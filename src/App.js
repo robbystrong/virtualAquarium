@@ -125,19 +125,19 @@ const FishInformation = [
   ]
 
   // link to info for all fish
-  const FishLink = [
-    "https://en.wikipedia.org/wiki/Clownfish",
-    "https://en.wikipedia.org/wiki/Pterois",
-    "https://en.wikipedia.org/wiki/Parrotfish",
-    "https://en.wikipedia.org/wiki/Synchiropus_splendidus",
-    "https://en.wikipedia.org/wiki/Triggerfish",
-    "https://en.wikipedia.org/wiki/Wrasse",
-    "https://en.wikipedia.org/wiki/Pterophyllum",
-    "https://en.wikipedia.org/wiki/Small-spotted_catshark",
-    "https://en.wikipedia.org/wiki/Hippocampus_kuda",
-    "https://en.wikipedia.org/wiki/Sea_turtle",
-    "https://en.wikipedia.org/wiki/Butterflyfish"
-  ]
+  // const FishLink = [
+  //   "https://en.wikipedia.org/wiki/Clownfish",
+  //   "https://en.wikipedia.org/wiki/Pterois",
+  //   "https://en.wikipedia.org/wiki/Parrotfish",
+  //   "https://en.wikipedia.org/wiki/Synchiropus_splendidus",
+  //   "https://en.wikipedia.org/wiki/Triggerfish",
+  //   "https://en.wikipedia.org/wiki/Wrasse",
+  //   "https://en.wikipedia.org/wiki/Pterophyllum",
+  //   "https://en.wikipedia.org/wiki/Small-spotted_catshark",
+  //   "https://en.wikipedia.org/wiki/Hippocampus_kuda",
+  //   "https://en.wikipedia.org/wiki/Sea_turtle",
+  //   "https://en.wikipedia.org/wiki/Butterflyfish"
+  // ]
 
   // The fish that display on the screen, can be randomised
   let DisplayFish = [clownfish, lionfish, parrotfish, mandarinfish, triggerfish, wrasse, angelfish, catshark, kudaseahorse, seaturtle, butterflyfish];
@@ -184,17 +184,17 @@ const FishInformation = [
       <h2 id = "webAq">Web Aquarium</h2>
       <p id = "click2enter" >Click to Enter</p>
 
-    <img src = {clownfish} id = "clownfish" onClick = {clickClownfish} alt="A picture of a clownfish"/>
-    <img src = {lionfish} id = "lionfish" onClick = {clickLionfish} alt="A picture of a lionfish"/>
-    <img src = {parrotfish} id = "parrotfish" onClick = {clickParrotfish} alt="A picture of a parrotfish"/>
-    <img src = {mandarinfish} id = "mandarinfish" onClick = {clickMandarinfish} alt="A picture of a mandarinfish"/>
-    <img src = {triggerfish} id = "triggerfish" onClick = {clickTriggerfish} alt="A picture of a triggerfish"/>
-    <img src = {wrasse} id = "wrasse" onClick = {clickWrasse} alt="A picture of a wrasse"/>
-    <img src = {angelfish} id = "angelfish" onClick = {clickAngelfish} alt="A picture of an angelfish"/>
-    <img src = {catshark} id = "catshark" onClick = {clickCatshark} alt="A picture of a catshark"/>
-    <img src = {kudaseahorse} id = "kudaseahorse" onClick = {clickKudaseahorse} alt="A picture of a kuda seahorse"/>
-    <img src = {seaturtle} id = "seaturtle" onClick = {clickSeaturtle} alt="A picture of a sea turtle"/>
-    <img src = {butterflyfish} id = "butterflyfish" onClick = {clickButterflyfish} alt="A picture of a butterflyfish"/>
+    <img src = {clownfish} id = "clownfish" onClick = {clickClownfish} alt="A clownfish"/>
+    <img src = {lionfish} id = "lionfish" onClick = {clickLionfish} alt="A lionfish"/>
+    <img src = {parrotfish} id = "parrotfish" onClick = {clickParrotfish} alt="A parrotfish"/>
+    <img src = {mandarinfish} id = "mandarinfish" onClick = {clickMandarinfish} alt="A mandarinfish"/>
+    <img src = {triggerfish} id = "triggerfish" onClick = {clickTriggerfish} alt="A triggerfish"/>
+    <img src = {wrasse} id = "wrasse" onClick = {clickWrasse} alt="A wrasse"/>
+    <img src = {angelfish} id = "angelfish" onClick = {clickAngelfish} alt="An angelfish"/>
+    <img src = {catshark} id = "catshark" onClick = {clickCatshark} alt="A catshark"/>
+    <img src = {kudaseahorse} id = "kudaseahorse" onClick = {clickKudaseahorse} alt="A kuda seahorse"/>
+    <img src = {seaturtle} id = "seaturtle" onClick = {clickSeaturtle} alt="A sea turtle"/>
+    <img src = {butterflyfish} id = "butterflyfish" onClick = {clickButterflyfish} alt="A butterflyfish"/>
 
     {isOpen && <Info
         handleClose={toggleInfo}
