@@ -108,7 +108,7 @@ function App() {
   const ListOfFish = [clownfish, lionfish, parrotfish, mandarinfish, triggerfish, wrasse, angelfish, catshark, kudaseahorse, seaturtle, butterflyfish];
 
   // names of all fish in string
-  const NamesOfFish = ["Clownfish", "Lionfish", "Parrotfish", "Mandarinfish", "Triggerfish", "Wrasse", "Angelfish", "Catshark", "Kudaseahorse", "Seaturtle", "butterflyfish"];
+  const NamesOfFish = ["Clownfish", "Lionfish", "Parrotfish", "Mandarinfish", "Triggerfish", "Wrasse", "Angelfish", "Catshark", "Kuda Seahorse", "Sea Turtle", "Butterflyfish"];
 
   // information of all fish
   const FishInformation = [
@@ -130,7 +130,6 @@ function App() {
 
   return (
   <div style = {{backgroundImage: "url(/aquarium.jpg)", filter: "brightness(100%)"}} className="App">
-    <Fish></Fish>
       {/* <ShowFish src={DisplayFish[0]} id = "clownfish"/> */}
       {/* <ShowFish src={DisplayFish[1]} id = "lionfish"/> */}
       <img src = {clownfish} id = "clownfish" onClick = {clickClownfish}/>
@@ -144,6 +143,8 @@ function App() {
       <img src = {kudaseahorse} id = "kudaseahorse" onClick = {clickKudaseahorse}/>
       <img src = {seaturtle} id = "seaturtle" onClick = {clickSeaturtle}/>
       <img src = {butterflyfish} id = "butterflyfish" onClick = {clickButterflyfish}/>
+
+      <Fish></Fish>
 
       {isOpen && <Info
         handleClose={toggleInfo}

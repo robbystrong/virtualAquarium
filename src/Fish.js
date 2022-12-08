@@ -23,15 +23,6 @@ const Fish = props => {
 //       <img src={butterflyfish} id="fish1" alt="Butterfly Fish" onClick={Info.toggleInfo} id="butterflyfish" width='200' height='200'/>
 // );
 
-  // let intro = anime({
-  //     targets: 'img',
-  //     keyframes: [
-  //       {translateX: ['-1000px', '0']}
-  //     ],
-  //     duration: 1000,
-  //     autoplay: true,
-  // });
-
   let anim = anime({
     targets: 'img',
     keyframes: [
@@ -40,8 +31,8 @@ const Fish = props => {
       // {translateZ: 4},
       // {translateZ: -4}
     ],
-    duration: 1000,
     autoplay: true,
+    duration: 1000,
     //direction: 'alternate',
     loop: true,
     //easing: 'easeInCirc',
