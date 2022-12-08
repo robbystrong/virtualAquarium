@@ -30,7 +30,7 @@ function App() {
   function FishInfo(props) {
     return (
     <div>
-      <img src = {props.src} className = "fish"></img>
+      <img src = {props.src} className = "fish" alt=""></img>
       <h1>{props.name}</h1>
       <p>{props.info}</p>
       </div>
