@@ -1,6 +1,5 @@
 import './App.css';
-// import React, {startTransition, useState} from "react"
-import React from "react";
+import React, {useState} from "react"
 import Info from "./Info.js";
 // import aquarium from "./aquarium.jpg"
 import butterflyfish from "./img/tropical/butterflyfish.png";
@@ -180,6 +179,7 @@ const FishInformation = [
         document.querySelectorAll(".App > img")[i].style.display = "block";
       }
     }}>
+
 
       <h2 id = "webAq">Web Aquarium</h2>
       <p id = "click2enter" >Click to Enter</p>
