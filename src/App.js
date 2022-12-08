@@ -53,11 +53,18 @@ function App() {
 
   return (
   <div style = {{backgroundImage: "url(/aquarium.jpg)", filter: "brightness(100%)"}} className="App">
-      <img src = {butterflyfish} id = "butterflyfish" onClick = {toggleInfo}/>
-      <ShowFish src={DisplayFish[0]} id = {DisplayFish[0].toString()}/>
-      <ShowFish src={DisplayFish[1]} id = {DisplayFish[1].toString()}/>
+      <ShowFish src={DisplayFish[0]} id = {"clownfish"}/>
+      <ShowFish src={DisplayFish[1]} id = {"lionfish"}/>
+      <ShowFish src={DisplayFish[2]} id = {"parrotfish"}/>
+      <ShowFish src={DisplayFish[3]} id = {"mandarinfish"}/>
+      <ShowFish src={DisplayFish[4]} id = {"triggerfish"}/>
+      <ShowFish src={DisplayFish[5]} id = {"wrasses"}/>
+      <ShowFish src={DisplayFish[6]} id = {"angelfish"}/>
+      <ShowFish src={DisplayFish[7]} id = {"catshark"}/>
+      <ShowFish src={DisplayFish[8]} id = {"kudaseahorse"}/>
+      <ShowFish src={DisplayFish[9]} id = {"seaturtle"}/>
       {/* <img src = {clownfish} id = "clownfish" onClick = {toggleInfo}/>
-      <img src = {lionfish} id = "lionfish" onClick = {toggleInfo}/> */}
+      <img src = {lionfish} id = "lionfish" onClick = {toggleInfo}/>
       <img src = {parrotfish} id = "parrotfish" onClick = {toggleInfo}/>
       <img src = {mandarinfish} id = "mandarinfish" onClick = {toggleInfo}/>
       <img src = {triggerfish} id = "triggerfish" onClick = {toggleInfo}/>
@@ -65,12 +72,12 @@ function App() {
       <img src = {angelfish} id = "angelfish" onClick = {toggleInfo}/>
       <img src = {catshark} id = "catshark" onClick = {toggleInfo}/>
       <img src = {kudaseahorse} id = "kudaseahorse" onClick = {toggleInfo}/>
-      <img src = {seaturtle} id = "seaturtle" onClick = {toggleInfo}/>
+      <img src = {seaturtle} id = "seaturtle" onClick = {toggleInfo}/> */}
       <Fish></Fish>
       {isOpen && <Info
         handleClose={toggleInfo}
         content={<div className="info-text">
-          <FishInfo 
+          <FishInfo
           src = {DisplayFish[0]} name = {NamesOfFish[0]} info = {FishInformation[0]}>
           </FishInfo>
           </div>}
